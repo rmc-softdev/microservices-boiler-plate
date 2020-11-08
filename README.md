@@ -1,2 +1,1 @@
-# microservices-boiler-plate
-This is going to be an attempt to build an interesting microservices application, using several resources.
+# to develop it, you can switch the etc/hosts file in your computer and use the listed ingress URL, namely: ticketing.dev
