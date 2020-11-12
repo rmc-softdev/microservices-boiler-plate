@@ -10,4 +10,8 @@ To check which pods are running:
 
 - kubectl get pods
 
-Notas: 0) Qualquer throw new ALGUMERRORCUSTOM é pego pelo nosso error-handler e interpretado apropriadamente.
+# Notas:
+
+0. Qualquer throw new ALGUMERRORCUSTOM é pego pelo nosso error-handler e interpretado apropriadamente.
+1. Use os modelos do ITH back e outros pra fazer uma comparação entre o BadRequestError e outros.
+2.
