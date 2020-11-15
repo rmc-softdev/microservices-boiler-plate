@@ -14,4 +14,5 @@ To check which pods are running:
 
 0. Qualquer throw new ALGUMERRORCUSTOM é pego pelo nosso error-handler e interpretado apropriadamente.
 1. Use os modelos do ITH back e outros pra fazer uma comparação entre o BadRequestError e outros.
-2.
+2. Check & reamke Dockerfiles vs Docker-compose, talvez refatorar usando outra coisa fora dpl e yaml, entenda as diferenças entre esses melhor.
+3.
