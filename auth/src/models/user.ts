@@ -30,6 +30,16 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true
   }
+}, {
+  toJSON: {
+    transform(doc, ret) {
+      ret.id = ret._id
+      delete ret._id
+      delete ret.password;
+    },
+    //this eliminates the __v from the mongoose schema
+    versionKey: false
+  }
 });
 
 userSchema.pre('save', async function(done) {
