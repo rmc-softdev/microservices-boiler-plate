@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import { body, validationResult } from 'express-validator';
+import { body } from 'express-validator';
 import jwt from 'jsonwebtoken'
 
 import {validateRequest} from '../middlewares/validate-request'
@@ -37,7 +37,7 @@ router.post(
 
     const userJwt = jwt.sign({
       id: user.id,
-      emal: user.email
+      email: user.email
     }, process.env.JWT_KEY!)
 
     req.session = {
